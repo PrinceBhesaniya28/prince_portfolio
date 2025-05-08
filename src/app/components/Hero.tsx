@@ -14,13 +14,13 @@ const Hero = () => {
         {/* Black Base */}
         <div className="w-12 h-8 bg-black rounded-md" />
         {/* Tab */}
-        <div className="w-6 h-5 bg-gradient-to-b from-black to-gray-800 rounded-b-md" />
+        <div className="w-6 h-6 bg-gradient-to-b from-black to-gray-800 rounded-b-md" />
       </div>
 
       {/* Outer Wrapper with Grey Border Effect */}
-      <div className="relative w-[350px] mt-[-6px] bg-gray-200 border-1 py-10 px-2 rounded-xl shadow-lg">
+      <div className="relative w-[365px] mt-[-14px] bg-gray-200 border-1 py-10 px-2 rounded-xl shadow-lg">
         {/* Slot behind hook */}
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 z-10 w-14 h-5 bg-[#f8f8f8] rounded-b-full shadow-inner" />
+        <div className="absolute top-2 left-1/2 -translate-x-1/2 z-10 w-12 h-4 bg-[#f8f8f8] rounded-full border-2" />
 
         {/* Card */}
         <div className="bg-white rounded-[24px] shadow-md border border-gray-200 overflow-hidden">
