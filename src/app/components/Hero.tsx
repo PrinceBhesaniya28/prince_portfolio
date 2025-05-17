@@ -90,7 +90,7 @@ const Hero = () => {
               <button className="relative flex items-center text-white text-sm font-medium h-12 pl-4 pr-1 rounded-full overflow-hidden bg-[#1E40FF] hover:bg-[#1a35d0] transition group">
                 <span className="z-10 mr-2">Get started</span>
                 <span className="h-9 w-9 rounded-full bg-white flex items-center justify-center text-[#1E40FF]">
-                  <BsArrowRight size={16} className="transform rotate-45 transition-transform group-hover:rotate-0 group-hover:scale-110" />
+                  <BsArrowUpRight size={16} className="transition-transform duration-500 ease-in-out transform group-hover:rotate-[45deg]" />
                 </span>
               </button>
               <button className="bg-[#f2f2f2] hover:bg-[#e4e4e4] text-black text-sm px-6 py-3 rounded-full transition">
@@ -108,9 +108,8 @@ const Hero = () => {
           </span>
           <span className="flex items-center gap-1 font-medium cursor-pointer hover:underline group">
             Templifica 
-            <span className="relative text-[#1E40FF]">
-              <BsArrowUpRight size={10} className="transition-opacity group-hover:opacity-0" />
-              <BsArrowRight size={10} className="absolute inset-0 opacity-0 transition-opacity group-hover:opacity-100" />
+            <span className="text-[#1E40FF]">
+              <BsArrowUpRight size={10} className="transition-transform duration-500 ease-in-out transform group-hover:rotate-[45deg]" />
             </span>
           </span>
         </div>
