@@ -3,7 +3,7 @@ import { Home, NotebookText, X } from "lucide-react";
 
 const BottomDock = () => {
   return (
-    <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 w-fit px-6 py-3 rounded-full shadow-xl border border-white/10 bg-black/50 backdrop-blur-md flex items-center gap-6 text-white">
+    <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 w-fit px-6 py-3 rounded-full shadow-xl border border-white/10 bg-black/70 backdrop-blur-md flex items-center gap-6 text-white">
       {/* Home Icon */}
       <Link
         href="/"

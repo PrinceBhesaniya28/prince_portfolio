@@ -1,30 +1,33 @@
+"use client";
+
 import React from "react";
+import { motion } from "framer-motion";
 import { BsArrowRight, BsArrowUpRight } from "react-icons/bs";
 import { FaStar } from "react-icons/fa";
 import { FaXTwitter, FaDribbble, FaGlobe } from "react-icons/fa6";
 
 const Hero = () => {
   return (
-    <div className="relative flex flex-col items-center justify-start min-h-screen pt-16 font-sans">
+    <motion.div
+      initial={{ y: -100, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      className="relative flex flex-col items-center justify-start min-h-screen pt-16 font-sans"
+    >
       {/* Strap */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-13.5 h-24 bg-[#1E40FF]" />
 
       {/* Hook */}
       <div className="z-20 relative flex flex-col items-center mb-[-6px]">
-        {/* Black Base */}
         <div className="w-15.5 h-10 bg-black rounded-md" />
-        {/* Tab */}
         <div className="w-7.5 h-6 bg-gradient-to-b from-black to-gray-800 rounded-b-sm" />
       </div>
 
       {/* Outer Wrapper with Grey Border Effect */}
       <div className="relative w-[565px] h-[870px] mt-[-14px] bg-[#EEEEEE] border-1 py-10 px-2 rounded-[50px] shadow-lg">
-        {/* Slot behind hook */}
         <div className="absolute top-2 left-1/2 -translate-x-1/2 z-10 w-15 h-5 rounded-full border-2" />
 
-        {/* Card */}
         <div className="bg-white h-[765px] rounded-[50px] shadow-md border border-gray-200 overflow-hidden">
-          {/* Card Inner */}
           <div className="px-8 pt-10 text-[#111]">
             {/* Progress Lines */}
             <div className="flex justify-between items-center mb-6">
@@ -90,7 +93,10 @@ const Hero = () => {
               <button className="relative flex items-center text-white text-sm font-medium h-12 pl-4 pr-1 rounded-full overflow-hidden bg-[#1E40FF] hover:bg-[#1a35d0] transition group">
                 <span className="z-10 mr-2">Get started</span>
                 <span className="h-9 w-9 rounded-full bg-white flex items-center justify-center text-[#1E40FF]">
-                  <BsArrowUpRight size={16} className="transition-transform duration-500 ease-in-out transform group-hover:rotate-[45deg]" />
+                  <BsArrowUpRight
+                    size={16}
+                    className="transition-transform duration-500 ease-in-out transform group-hover:rotate-[45deg]"
+                  />
                 </span>
               </button>
               <button className="bg-[#f2f2f2] hover:bg-[#e4e4e4] text-black text-sm px-6 py-3 rounded-full transition">
@@ -99,22 +105,25 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        
-        {/* Bottom text integrated with outer div */}
+
+        {/* Bottom text */}
         <div className="flex justify-between items-center px-6 py-3 text-[12px] text-gray-600 mt-4">
           <span>
             Located in <span className="font-medium">London</span>, available
             worldwide.
           </span>
           <span className="flex items-center gap-1 font-medium cursor-pointer hover:underline group">
-            Templifica 
+            Templifica
             <span className="text-[#1E40FF]">
-              <BsArrowUpRight size={10} className="transition-transform duration-500 ease-in-out transform group-hover:rotate-[45deg]" />
+              <BsArrowUpRight
+                size={10}
+                className="transition-transform duration-500 ease-in-out transform group-hover:rotate-[45deg]"
+              />
             </span>
           </span>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
