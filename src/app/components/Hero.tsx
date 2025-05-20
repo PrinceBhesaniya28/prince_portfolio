@@ -28,9 +28,9 @@ const Hero = () => {
         <div className="absolute top-2 left-1/2 -translate-x-1/2 z-10 w-15 h-5 rounded-full border-2" />
 
         <div className="bg-white h-[765px] rounded-[50px] shadow-md border border-gray-200 overflow-hidden">
-          <div className="px-8 pt-10 text-[#111]">
+          <div className="px-10 pt-10 text-[#111]">
             {/* Progress Lines */}
-            <div className="flex justify-between items-center mb-6">
+            <div className="flex justify-between items-center mb-12">
               <div className="h-1.5 rounded-full bg-lime-400 w-1/3 mr-2" />
               <div className="h-1.5 rounded-full bg-lime-400 w-1/3 mr-2" />
               <div className="h-1.5 rounded-full bg-gray-200 w-1/3" />
@@ -41,32 +41,31 @@ const Hero = () => {
               <div className="flex items-center gap-3">
                 <img
                   src="https://via.placeholder.com/40"
-                  alt="Avatar"
-                  className="w-10 h-10 rounded-full object-cover"
+                  alt="Prfile"
+                  className="w-14 h-14 rounded-full object-cover"
                 />
-                <div>
-                  <h1 className="text-base font-semibold">Prince Bhesaniya</h1>
-                  <p className="text-sm text-gray-500">
+                <div className="ml-2">
+                  <h1 className="text-2xl font-semibold ">Prince Bhesaniya</h1>
+                  <p className="text-md text-gray-500 mb-4">
                     Web-developer, (Front-end)
                   </p>
+                  {/* Social Icons */}
+                  <div className="flex gap-4 text-gray-500 text-2xl">
+                    <FaXTwitter className="cursor-pointer" />
+                    <FaDribbble className="cursor-pointer" />
+                    <FaGlobe className="cursor-pointer" />
+                  </div>
                 </div>
               </div>
               <div className="text-right text-xs text-gray-500 flex flex-col items-end">
-                <span className="text-green-500 text-base leading-none">●</span>
+                <span className="text-lime-400 text-base leading-none">●</span>
                 <span className="leading-none">2 open slots</span>
                 <span className="leading-none">for December</span>
               </div>
             </div>
 
-            {/* Social Icons */}
-            <div className="flex gap-4 text-gray-500 text-base mb-10">
-              <FaXTwitter className="cursor-pointer" />
-              <FaDribbble className="cursor-pointer" />
-              <FaGlobe className="cursor-pointer" />
-            </div>
-
             {/* Headline */}
-            <h2 className="text-[42px] font-semibold leading-[1.15] tracking-tight mb-6">
+            <h2 className="text-[70px] font-semibold leading-[1.15] tracking-tight mb-6">
               I create <br /> websites that <br /> work as hard <br /> as you do
             </h2>
 
