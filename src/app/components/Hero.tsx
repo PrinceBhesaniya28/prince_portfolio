@@ -57,7 +57,7 @@ const Hero = () => {
                   </div>
                 </div>
               </div>
-              <div className="text-right text-xs text-gray-500 flex flex-col items-end">
+              <div className="text-right text-xs text-gray-500 flex items-end">
                 <span className="text-lime-400 text-base leading-none">●</span>
                 <span className="leading-none">2 open slots</span>
                 <span className="leading-none">for December</span>
