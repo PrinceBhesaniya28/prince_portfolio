@@ -4,7 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { BsArrowRight, BsArrowUpRight } from "react-icons/bs";
 import { FaStar } from "react-icons/fa";
-import { FaXTwitter, FaDribbble, FaGlobe } from "react-icons/fa6";
+import { FaXTwitter, FaLinkedin, FaGithub } from "react-icons/fa6";
 
 const Hero = () => {
   return (
@@ -24,8 +24,8 @@ const Hero = () => {
       </div>
 
       {/* Outer Wrapper with Grey Border Effect */}
-      <div className="relative w-[565px] h-[870px] mt-[-14px] bg-[#EEEEEE] border-1 py-10 px-2 rounded-[50px] shadow-lg">
-        <div className="absolute top-2 left-1/2 -translate-x-1/2 z-10 w-15 h-5 rounded-full border-2" />
+      <div className="relative w-[565px] h-[870px] mt-[-14px] bg-[#EEEEEE] py-10 px-2 rounded-[50px] shadow-lg">
+        <div className="absolute top-2 left-1/2 -translate-x-1/2 z-10 w-15 h-5 rounded-full bg-white" />
 
         <div className="bg-white h-[765px] rounded-[50px] shadow-md border border-gray-200 overflow-hidden">
           <div className="px-10 pt-10 text-[#111]">
@@ -37,7 +37,7 @@ const Hero = () => {
             </div>
 
             {/* Top - Profile & Slots */}
-            <div className="flex justify-between items-center mb-8">
+            <div className="flex justify-between items-start mb-8">
               <div className="flex items-center gap-3">
                 <img
                   src="https://via.placeholder.com/40"
@@ -46,21 +46,22 @@ const Hero = () => {
                 />
                 <div className="ml-2">
                   <h1 className="text-2xl font-semibold ">Prince Bhesaniya</h1>
-                  <p className="text-md text-gray-500 mb-4">
+                  <p className="text-md text-gray-500 mb-2">
                     Web-developer, (Front-end)
                   </p>
                   {/* Social Icons */}
                   <div className="flex gap-4 text-gray-500 text-2xl">
                     <FaXTwitter className="cursor-pointer" />
-                    <FaDribbble className="cursor-pointer" />
-                    <FaGlobe className="cursor-pointer" />
+                    <FaLinkedin className="cursor-pointer" />
+                    <FaGithub className="cursor-pointer" />
                   </div>
                 </div>
               </div>
-              <div className="text-right text-xs text-gray-500 flex items-end">
-                <span className="text-lime-400 text-base leading-none">●</span>
-                <span className="leading-none">2 open slots</span>
-                <span className="leading-none">for December</span>
+              <div className="text-right text-xs text-gray-500 flex flex-col items-end">
+                <div className="flex items-center">
+                  <span className="text-lime-500 text-base mr-1 animate-[blink_2s_ease-in-out_infinite]">●</span>
+                  <span className="text-[15px] font-semibold text-black">Available</span>
+                </div>
               </div>
             </div>
 
@@ -70,13 +71,13 @@ const Hero = () => {
             </h2>
 
             {/* Rating and Tag */}
-            <div className="flex bg-gray-300 w-fit px-6 items-center gap-2 mb-6">
+            <div className="flex bg-gray-100 hover:bg-gray-200 transition-colors duration-200 w-fit px-6 py-2 items-center gap-2 mb-6 rounded-full cursor-pointer">
               <div className="flex text-black">
                 {[...Array(5)].map((_, i) => (
                   <FaStar key={i} className="text-black text-[12px]" />
                 ))}
               </div>
-              <div className="text-[12px] px-3 py-1 rounded-full text-black">
+              <div className="text-[12px] px-3 py-1 rounded-full text-black bg-white">
                 50+ customers
               </div>
             </div>
@@ -127,3 +128,5 @@ const Hero = () => {
 };
 
 export default Hero;
+
+
