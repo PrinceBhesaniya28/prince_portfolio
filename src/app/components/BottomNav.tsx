@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Home, NotebookText, X } from "lucide-react";
+import { Home } from "lucide-react";
 
 const BottomDock = () => {
   return (

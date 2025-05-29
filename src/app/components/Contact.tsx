@@ -6,9 +6,9 @@ const Contact = () => {
     <section className="relative w-full py-24 bg-gradient-to-b from-white to-gray-50">
       <div className="max-w-4xl mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-5xl font-bold mb-4">Let's work together</h2>
+          <h2 className="text-5xl font-bold mb-4">Let&apos;s work together</h2>
           <p className="text-gray-600 text-lg">
-            Have a project in mind? I'd love to hear about it.
+            Have a project in mind? I&apos;d love to hear about it.
           </p>
         </div>
 

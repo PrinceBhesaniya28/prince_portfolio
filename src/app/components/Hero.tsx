@@ -2,9 +2,10 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { BsArrowRight, BsArrowUpRight } from "react-icons/bs";
+import { BsArrowUpRight } from "react-icons/bs";
 import { FaStar } from "react-icons/fa";
 import { FaXTwitter, FaLinkedin, FaGithub } from "react-icons/fa6";
+import Image from "next/image";
 
 const Hero = () => {
   return (
@@ -39,10 +40,12 @@ const Hero = () => {
             {/* Top - Profile & Slots */}
             <div className="flex justify-between items-start mb-8">
               <div className="flex items-center gap-3">
-                <img
+                <Image
                   src="https://via.placeholder.com/40"
-                  alt="Prfile"
-                  className="w-14 h-14 rounded-full object-cover"
+                  alt="Profile"
+                  width={56}
+                  height={56}
+                  className="rounded-full object-cover"
                 />
                 <div className="ml-2">
                   <h1 className="text-2xl font-semibold ">Prince Bhesaniya</h1>
