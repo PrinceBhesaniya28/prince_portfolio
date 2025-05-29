@@ -42,37 +42,40 @@ const projects = [
 
 const WorkShowcase = () => {
   return (
-    <section className="text-center px-4 py-16">
-      <h2 className="text-4xl font-bold mb-2">My work</h2>
-      <p className="text-gray-500 mb-12">
+    <section className="text-center px-4 py-8 md:py-16">
+      <h2 className="text-3xl md:text-4xl font-bold mb-2">My work</h2>
+      <p className="text-gray-500 mb-8 md:mb-12 text-sm md:text-base">
         Check out some of my favorite<br className="sm:hidden" />
         & most recent projects.
       </p>
 
-      <div className="flex flex-col gap-3 max-w-xl mx-auto">
+      <div className="flex flex-col gap-4 md:gap-6 max-w-xl mx-auto">
         {projects.map((project, index) => (
-          <div key={index} className={`relative rounded-3xl overflow-hidden bg-gradient-to-br ${project.gradient} p-6`}>
-            <div className="transform rotate-12">
+          <div 
+            key={index} 
+            className={`relative rounded-2xl md:rounded-3xl overflow-hidden bg-gradient-to-br ${project.gradient} p-4 md:p-6`}
+          >
+            <div className="transform rotate-12 scale-90 md:scale-100">
               <Image
                 src={project.image}
                 alt={`${project.title} project screenshot`}
                 width={600}
                 height={400}
-                className="rounded-xl shadow-2xl"
+                className="rounded-xl shadow-2xl w-full h-auto"
               />
             </div>
 
-            <div className="absolute bottom-4 left-4 right-4 bg-white rounded-full shadow-lg flex items-center justify-between px-4 py-3">
-              <div className="flex items-center gap-3">
-                <div className="w-8 h-8 rounded-full bg-[#5B47FB] flex items-center justify-center text-white font-bold">
+            <div className="absolute bottom-3 md:bottom-4 left-3 md:left-4 right-3 md:right-4 bg-white rounded-full shadow-lg flex items-center justify-between px-3 md:px-4 py-2 md:py-3">
+              <div className="flex items-center gap-2 md:gap-3">
+                <div className="w-6 h-6 md:w-8 md:h-8 rounded-full bg-[#5B47FB] flex items-center justify-center text-white font-bold text-sm md:text-base">
                   <span>{project.initial}</span>
                 </div>
                 <div className="text-left">
-                  <p className="font-semibold text-sm">{project.title}</p>
-                  <p className="text-xs text-gray-500">{project.description}</p>
+                  <p className="font-semibold text-xs md:text-sm">{project.title}</p>
+                  <p className="text-[10px] md:text-xs text-gray-500 line-clamp-1">{project.description}</p>
                 </div>
               </div>
-              <ArrowUpRight className="w-5 h-5 text-gray-600" />
+              <ArrowUpRight className="w-4 h-4 md:w-5 md:h-5 text-gray-600" />
             </div>
           </div>
         ))}
